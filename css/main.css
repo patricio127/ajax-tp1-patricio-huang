@@ -1,0 +1,7 @@
+#results, #no-results{
+    display: none;
+}
+
+#results.show, #no-results.show {
+    display: block;
+}
