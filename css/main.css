@@ -1,5 +1,9 @@
-h1 {
+h1{
     font-size: 3em;
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
     text-align: center;
 }
 header p {
@@ -8,20 +12,18 @@ header p {
     text-align: center;
 }
 #contenedor {
-    /* max-width: 90%; */
     margin: auto;
-    padding-top: 5rem;
 }
 #info {
     padding: 50px;
     background-color: #d1d9d9;
     border-radius: 10px
 }
-#results, #no-results{
+#results, #no-results, #map-container {
     display: none;
 }
 
-#results.show, #no-results.show {
+#results.show, #no-results.show, #map-container.show {
     display: block;
 }
 #weather-type {
@@ -64,4 +66,9 @@ article.card{
     justify-content: space-around;
     margin-top: 30px;
 }
-
+#map {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+}
