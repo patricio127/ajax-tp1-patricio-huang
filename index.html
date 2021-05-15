@@ -3,52 +3,113 @@
     <head>
         <title>Clima</title>
         <meta charset="UTF-8">
-
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css" >
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>Patricio Huang, Cátedra PWA</title>
     </head>
     <body>
-        <section class="contact-form">
-            <h1>Buscar clima</h1>
-            <form id="contact-form">
-                <label for="search">Ingrese una ubicación:</label>
-                <input title="Search" id="search" value="" type="text" required/>
+        <div id="contenedor" class="container-fluid">
 
-                <button id="sendButton" type="button">Buscar</button>
-            </form>
-        </section>
-        <section id="no-results">
-            <p>Lamentablemente no se encontraron resultados para la búsqueda.</p>
-        </section>
-        <section id="results">
-            <img src="" alt="weather-icon" id="weather-icon">
-            <p id="weather-description"></p>
-            <article>
-                <h3>Temperatura Máxima</h3>
-                <p><span id="temp-max"></span> ℃</p>
-            </article>
-            <article>
-                <h3>Temperatura Mínima</h3>
-                <p><span id="temp-min"></span> ℃</p>
-            </article>
-            <article>
-                <h3>Humedad</h3>
-                <p><span id="humidity"></span> %</p>
-            </article>
-            <article>
-                <h3>Sensación térmica</h3>
-                <p><span id="feels"></span> ℃</p>
-            </article>
-            <article>
-                <h3>Presión atmosférica</h3>
-                <p><span id="pressure"></span> hPa</p>
-            </article>
-            <article>
-                <h3>Velocidad del viento</h3>
-                <p><span id="wind-speed"></span> km/h</p>
-            </article>
-        </section>
+            <div class="row">
 
-        <div id="main"></div>
+                <div class="col-sm-12 col-md-6 outer-container">
+                    <div id="info">
+                        <header>
+                            <h1>Consulta el clima de tu ciudad</h1>
+                            <p>Ingrese una ciudad, para averiguar el clima</p>
+                        </header>
+                        <section class="contact-form">
+                            <form id="contact-form" class="mb-3">
+                                <label for="search" class="form-label">Ingrese una ubicación:</label>
+                                <input title="Search" class="form-control" id="search" value="" type="text" required/>
+                                <div id="boton">
+                                    <button id="sendButton" class="btn btn-primary col-6 " type="button">Buscar</button>
+                                </div> 
+                            </form>
+                        </section>
+                        <section id="no-results">
+                            <p>Lamentablemente no se encontraron resultados para la búsqueda.</p>
+                        </section>
+                    </div>
+                </div>
+                
+
+                <div class="col-sm-12 col-md-6 outer-container">
+
+                    <section id="results">
+
+                        <div id="weather-type">
+                            <img src="" alt="weather-icon" id="weather-icon">
+                            <p id="weather-description"></p>
+                        </div>
+
+                        <div class="row">
+                            <div class="article-container col-sm-12 col-md-6 col-lg-4">
+                                <article class="card">
+                                    <div class="card-header">Temperatura Máxima</div>
+                                    <div class="card-body">
+                                        <p><span id="temp-max"></span> ℃</p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="article-container col-sm-12 col-md-6 col-lg-4">
+                                <article class="card">
+                                    <div class="card-header">Temperatura Mínima</div>
+                                    <div class="card-body">
+                                        <p><span id="temp-min"></span> ℃</p>
+                                    </div> 
+                                </article>
+                            </div>
+                            
+                            <div class="article-container col-sm-12 col-md-6 col-lg-4">
+                                <article class="card">
+                                    <div class="card-header">Humedad</div>
+                                    <div class="card-body">
+                                        <p><span id="humidity"></span> %</p>
+                                    </div>
+                                </article>
+                            </div>
+                            
+                            <div class="article-container col-sm-12 col-md-6 col-lg-4">
+                                <article class="card">
+                                    <div class="card-header">Sensación térmica</div>
+                                    <div class="card-body">
+                                        <p><span id="feels"></span> ℃</p>
+                                    </div>
+                                </article>
+                            </div>
+                            
+                            <div class="article-container col-sm-12 col-md-6 col-lg-4">
+                                <article class="card">
+                                    <div class="card-header">Presión atmosférica</div>
+                                    <div class="card-body">
+                                        <p><span id="pressure"></span> hPa</p>
+                                    </div>
+                                </article>
+                            </div>
+                            
+                            <div class="article-container col-sm-12 col-md-6 col-lg-4">
+                                <article class="card">
+                                    <div class="card-header">Velocidad del viento</div>
+                                    <div class="card-body">
+                                        <p><span id="wind-speed"></span> km/h</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+            
+        </div>
+        
+        <script src="css/bootstrap/js/jquery-3.5.1.min.js"></script>
+        <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="js/main.js"></script>  
     </body>
 </html>

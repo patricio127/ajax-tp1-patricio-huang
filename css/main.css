@@ -1,3 +1,22 @@
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+header p {
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+#contenedor {
+    /* max-width: 90%; */
+    margin: auto;
+    padding-top: 5rem;
+}
+#info {
+    padding: 50px;
+    background-color: #d1d9d9;
+    border-radius: 10px
+}
 #results, #no-results{
     display: none;
 }
@@ -5,3 +24,44 @@
 #results.show, #no-results.show {
     display: block;
 }
+#weather-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#weather-type p{
+    padding: 20px 0 0;
+}
+.outer-container {
+    padding: 5vw;
+}
+.article-container {
+    padding: 10px;
+}
+article.card{
+    padding: 0; 
+}
+.article-container:nth-of-type(1) article.card .card-header{
+    background-color: #ffcb91;
+}
+.article-container:nth-of-type(2) article.card .card-header{
+    background-color: #b6c9f0;
+}
+.article-container:nth-of-type(3) article.card .card-header{
+    background-color: #a9f1df;
+}
+.article-container:nth-of-type(4) article.card .card-header{
+    background-color: #ffefa1;
+}
+.article-container:nth-of-type(5) article.card .card-header{
+    background-color: #94ebcd;
+}
+.article-container:nth-of-type(6) article.card .card-header{
+    background-color: #eec4c4;
+}
+#boton {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+

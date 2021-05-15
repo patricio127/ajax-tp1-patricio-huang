@@ -2,7 +2,6 @@ const API_KEY = '3d73f7682621c007f0a32e31c44dba02';
 const base_URL= 'https://api.openweathermap.org';
 
 const button = document.getElementById("sendButton");
-const main = document.getElementById("main");
 const inputElement = document.getElementById("search");
 const resultsElement = document.getElementById('results');
 const noResultsElement = document.getElementById('no-results');
