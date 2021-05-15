@@ -1,4 +1,4 @@
-# ajax-tp1-patricio-huang
+# Ajax-Tp1-Aplicaciones Web Progresivas
  
 ## Nombre completo 
 Patricio Huang
