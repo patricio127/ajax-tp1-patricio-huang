@@ -1,3 +1,22 @@
+/* Link a la paleta de color
+
+https://coolors.co/ffadad-ffd6a5-fdffb6-caffbf-9bf6ff-a0c4ff-bdb2ff-ffc6ff
+
+
+
+*/
+/* CSS HEX */
+:root {
+    --light-pink: #ffadadff;
+    --deep-champagne: #ffd6a5ff;
+    --lemon-yellow-crayola: #fdffb6ff;
+    --tea-green: #caffbfff;
+    --celeste: #9bf6ffff;
+    --baby-blue-eyes: #a0c4ffff;
+    --maximum-blue-purple: #bdb2ffff;
+    --mauve: #ffc6ffff;
+}
+
 h1{
     font-size: 3em;
     text-align: center;
@@ -16,7 +35,7 @@ header p {
 }
 #info {
     padding: 50px;
-    background-color: #d1d9d9;
+    background-color: var(--deep-champagne);
     border-radius: 10px
 }
 #results, #no-results, #map-container {
@@ -44,27 +63,37 @@ article.card{
     padding: 0; 
 }
 .article-container:nth-of-type(1) article.card .card-header{
-    background-color: #ffcb91;
+    background-color: var(--light-pink);
+    
 }
 .article-container:nth-of-type(2) article.card .card-header{
-    background-color: #b6c9f0;
+    background-color: var(--celeste);
 }
 .article-container:nth-of-type(3) article.card .card-header{
-    background-color: #a9f1df;
+    background-color: var(--tea-green);
 }
 .article-container:nth-of-type(4) article.card .card-header{
-    background-color: #ffefa1;
+    background-color: var(--lemon-yellow-crayola);
 }
 .article-container:nth-of-type(5) article.card .card-header{
-    background-color: #94ebcd;
+    background-color: var(--mauve);
 }
 .article-container:nth-of-type(6) article.card .card-header{
-    background-color: #eec4c4;
+    background-color: var(--baby-blue-eyes);
 }
 #boton {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+    
+}
+#sendButton {
+    background-color: var(--maximum-blue-purple);
+    border:  none;
+    color: black;
+}
+#sendButton:hover {
+    opacity: 80%;
 }
 #map {
     width: 100%;
